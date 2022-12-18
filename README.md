@@ -67,3 +67,98 @@ where ``mask_rcnn_swin-t-p4-w7_fpn_1x_coco_datapath_loadckpt.py`` is the configu
 # For Professors and TAs:
 
 If you are reading till here right now, please forgive me not showing the evaluation data. I keep updating the data. The data will be available shortly (within 24 hours).Thank you!
+
+
+# Results
+
+The results below are all based on the models with1 epoch training on COCO 2017 training dataset.
+
+The results are the COCO 2017 test dataset.
+
+### For Swin Backbone:
+
+#### Bounding Box
+
+
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.264
+Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.486
+Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.263
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.150
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.287
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.349
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.418
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.418
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.418
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.249
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.446
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.543
+
+
+#### Segmentation
+
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.268
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.458
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.276
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.118
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.289
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.401
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.412
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.412
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.412
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.232
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.444
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.554
+
+
+![A living room](swin1.jpg "A living room")
+
+![a bear](swin2.jpg "a bear with Swin")
+
+![a bedroom](swin3.jpg "A Bedroom")
+
+### For ResNet-50 Backbone:
+
+#### Bounding Box
+
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.190
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.362
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.178
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.102
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.210
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.245
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.350
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.350
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.350
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.185
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.368
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.455
+
+
+#### Segmentation
+
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.191
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.339
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.192
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.077
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.207
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.342
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.342
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.342
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.167
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.367
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.457
+
+
+![A living room](resnet50-1.jpg "A living room")
+
+![A Bear](resnet50-2.jpg "A Bear With ResNet-50")
+
+![A Bedroom](resnet50-3.jpg "A Bedroom with ResNet 50")
+
+
+# Model Files
+
+| Mask R-CNN + FPN + Swin Transformer                                                                                                                                                      | Mask R-CNN + FPN + ResNet-50                                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Epoch-1](https://drive.google.com/file/d/1ICCtjaznnKimzO2ec3w3kjs-OW-jUcm5/view?usp=sharing)  [Epoch-10](https://drive.google.com/file/d/1B2sc9oeTfCx0Jku3arNE3xFAD_wu6c8L/view?usp=sharing) | [Epoch-1](https://drive.google.com/file/d/1jH8BrW0dZfGt0h3aIp-9oo_zgCHw4jPG/view?usp=sharing) [Epoch-9](https://drive.google.com/file/d/1lotBccc4ZLFI_9v8ysnKaUlN143WHkkF/view?usp=sharing) |
