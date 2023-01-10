@@ -6,7 +6,7 @@ Supervised Training in the New York University 2021 Intro To Deep Learning Syste
 
 ## Chieh-Hsin Chen cc7204@nyu.edu
 
-# ## Links
+## Links
 
 For Self Supervised Learning MoBY to train Swin Transformer, also the main part of the whole project, please consult:
 
